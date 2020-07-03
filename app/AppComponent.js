@@ -31,7 +31,7 @@ class AppComponent extends PureComponent {
 
   render = () => {
     return(
-      <View style={{ flex: 1, backgroundColor: 'white' }}>
+      <View style={{ flex: 1, backgroundColor: '#3b3b3b' }}>
         <ACGuide duration={4}/>
       </View>
     );

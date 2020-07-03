@@ -98,8 +98,8 @@ class ACTimeslots extends PureComponent {
           horizontal
           ref={this.viewRef}
           scrollEnabled={!FormFactor.isTV}>
-          <View style={{ flex: 1, flexDirection: 'column' }}>
-            <ACHeader duration={duration} />
+          <View style={{ flex: 1, flexDirection: 'column'}}>
+            <ACHeader duration={duration}/>
             <FlatList
               ref={this.listRef}
               scrollEnabled={!FormFactor.isTV}

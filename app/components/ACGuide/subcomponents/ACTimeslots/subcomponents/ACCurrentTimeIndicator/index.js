@@ -56,8 +56,8 @@ class ACCurrentTimeIndicator extends PureComponent {
   render() {
     const currentTimeIndicator = {
       height: this.state.grid.height,
-      width: 2,
-      backgroundColor: '#009FDB',
+      width: 4,
+      backgroundColor: '#c26f2b',
       position: 'absolute',
       left: this.state.position + 4,
       top: ACTimeslotHeaderHeight,

@@ -100,19 +100,7 @@ class ACModal extends PureComponent {
     const { imageId } = images[0];
 
     return (
-      <View style={{...style, flexDirection: 'row', justifyContent: 'flex-start' }}>
-        <ACImage
-          style={ACModalImageStyle}
-          source={{ uri: `res://drawable/default/${imageId}.jpeg` }}
-          default={{ uri: 'res://drawable/default/default.jpeg' }}
-        />
-        <View style={{ flex: 1, flexDirection: 'column', marginLeft: 5 }}>
-          <Text style={ACDefaultTitleTextStyle}>{title}</Text>
-          {this.renderTagLine(data)}
-          {this.renderDescription(description)}
-          {this.renderAdvisory(tvAdvisories)}
-        </View>
-      </View>
+      <View></View>
     );
   }
 }

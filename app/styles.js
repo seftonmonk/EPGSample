@@ -32,8 +32,9 @@ const ACChannelStyle = {
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  borderColor: 'grey',
-  borderWidth: 1,
+  borderColor: '#1e1e1e',
+  borderWidth: 6,
+  marginRight:3,
   height: ACDefaultHeight,
 };
 
@@ -48,7 +49,7 @@ const ACChannelTextStyle = {
     default: 20,
   }),
   flexShrink: 1,
-  color: 'grey',
+  color: 'white',
 };
 
 const ACTimeslotFocusStyle = {
@@ -56,8 +57,10 @@ const ACTimeslotFocusStyle = {
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  borderColor: '#4DB8FF',
-  borderWidth: 3,
+  borderColor: '#c26f2b',
+  borderWidth: 6,
+  marginRight:3,
+  paddingRight:-3,
   width: ACTimeslotDefaultWidth,
   height: ACDefaultHeight,
 };
@@ -67,8 +70,8 @@ const ACTimeslotStyle = {
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-  borderColor: 'grey',
-  borderWidth: 1,
+  borderColor: '#1e1e1e',
+  borderWidth: 6,
   width: ACTimeslotDefaultWidth,
   height: ACDefaultHeight,
 };
@@ -78,7 +81,8 @@ const ACDefaultTextStyle = {
     Handset: 14,
     default: 20,
   }),
-  color: 'grey',
+  color: 'white',
+  fontSize:24,
 };
 
 const ACDefaultTitleTextStyle = {
@@ -86,7 +90,7 @@ const ACDefaultTitleTextStyle = {
     Handset: 18,
     default: 36,
   }),
-  color: 'grey',
+  color: 'white',
 };
 
 const ACDefaultBodyTextStyle = {
@@ -94,13 +98,13 @@ const ACDefaultBodyTextStyle = {
     Handset: 12,
     default: 20,
   }),
-  color: 'grey',
+  color: 'white',
 };
 
 const ACModalStyle = FormFactor.select({
   Handset: {
     backgroundColor: 'white',
-    borderColor: 'grey',
+    borderColor: 'white',
     borderWidth: 1,
     position: 'absolute',
     top: ACDefaultHeight + ACTimeslotHeaderHeight,
@@ -128,14 +132,14 @@ const ACModalImageStyle = FormFactor.select({
 const ACModalBodyTextStyle = FormFactor.select({
   Handset: {
     fontSize: 12,
-    color: 'grey',
+    color: 'white',
     width: '95%',
   },
   default: {
     marginBottom: 20,
     marginTop: 20,
     fontSize: 20,
-    color: 'grey',
+    color: 'white',
     width: '95%',
   },
 });

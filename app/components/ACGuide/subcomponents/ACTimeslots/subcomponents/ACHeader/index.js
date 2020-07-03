@@ -47,6 +47,7 @@ class ACHeader extends PureComponent {
     const headerStyle = {
       ...ACDefaultTextStyle,
       height: ACTimeslotHeaderHeight,
+
     };
 
     const headerViewStyle = {
@@ -58,7 +59,7 @@ class ACHeader extends PureComponent {
 
     return (
       <View style={{ height: ACTimeslotHeaderHeight }}>
-        <ScrollView horizontal scrollEnabled={false}>
+        <ScrollView horizontal scrollEnabled={false} styles={{top:100}}>
           {columns.map((index) => {
             return (
               <ACSlot key={index} style={headerViewStyle}>
